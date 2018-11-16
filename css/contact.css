@@ -49,7 +49,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     height: 30%;
-    width: 500px;
+    width: 40%;
     border: 4px solid black;
     position:relative;
     border-collapse: collapse;
@@ -97,3 +97,19 @@ table tr , td , th{
     background-color: antiquewhite;
 }
 
+.audio{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+audio{
+    display: none;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 600px){
+    table{
+        width: 100%;
+    }
+}
