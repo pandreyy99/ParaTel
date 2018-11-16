@@ -158,9 +158,9 @@ ul.menu>li .contact{
 }
 
 .box img{
-    width: 40%;
-    height: 200px;
-    border-radius: 35px;
+    max-width: 40%;
+    max-height: 200px;
+    border-radius: 5px;
 }
 
 #head_div {
@@ -346,8 +346,8 @@ aside{
     
     .box img{
         border-radius: 0px;
-        width: 25%;
-        height: 150px;
+        max-width: 25%;
+        max-height: 150px;
     }
 
     #head_div {
@@ -467,9 +467,9 @@ aside{
     }
     
     .box img{
-        width: 40%;
+        max-width: 40%;
         border-radius: 0px;
-        height: 150px;
+        max-height: 150px;
     }
 
     #head_div {
