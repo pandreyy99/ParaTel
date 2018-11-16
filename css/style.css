@@ -1,0 +1,612 @@
+html{
+    font: 16px Arial , Helvetica;
+}
+
+body{
+  font: 1rem;
+  padding:0px;
+  margin:0px;
+  text-indent: 0;
+  background-color:#f4f4f4;
+}
+
+.container{  
+  position: fixed;
+  top: 0px;
+  background-color:#35424a;
+  border-bottom:#e8491d 4px solid;
+  width:100%;
+  min-height: 100px;
+  margin:0px;
+  overflow: hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+header{
+  background-color:#35424a;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#e8491d 4px solid;
+}
+
+/*  header  */
+
+header #logo{
+  width: 25%;    
+  float:right;
+  position: relative;
+  right: 20px;
+  top: 30px;
+}
+
+header #first{
+    color: dodgerblue;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+header #second{
+    color: red;
+    font-size: 3.5rem;
+    font-weight: bold;
+} 
+
+header #logo h1{
+  margin:0;
+}
+
+header #logo img{
+    width: 4rem;
+    height: 3.5rem;
+}
+
+header nav{
+  width: 65%;
+  float:left;
+  margin-top:0px;
+}
+
+
+/* menu and submenu */
+
+ul.menu{
+    position: fixed;
+    top: 80px;
+}
+
+ul.menu>li , ul.menu>li>ul.submenu>li{
+    display:block;
+    font-size:1rem;
+    font-weight:bold;
+	height:1rem;
+    text-align:center;
+	line-height:1.2rem;
+    list-style-type:none;
+    overflow: hidden;
+    padding:0px;
+	margin:0px;
+}
+
+ul.menu>li{
+    float: right;
+    width: auto;
+    display: block;
+    padding: 0 1.2rem 0 1.2rem;
+}
+
+ul.submenu>li{
+    width: 100%;
+    background-color:#35424a;
+    border-bottom: 2px solid orangered;
+}
+
+ul.menu>li>a , ul.submenu>li>a{
+    display: block;
+    margin: 0px;
+    font-size: 1rem;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul.menu>li>ul.submenu{
+    position: relative;
+    top: 0px;
+}
+
+ul.menu>li:hover{
+    overflow: visible;
+}
+
+ul.menu .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+ul.menu>li .contact{
+    color:dodgerblue;
+    font-weight: bold;
+}
+
+/* boxes */
+
+.containere{
+    display: grid;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid #e8491d;
+    border-radius: 25px;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+}
+
+.box{
+  float:left;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border-left: 2px solid #e8491d;
+  border-right: 2px solid #e8491d;    
+  border-radius: 35px;    
+  text-align: center;
+  width:100%;
+  height: auto;
+}
+
+.box img{
+    width: 40%;
+    height: 200px;
+    border-radius: 35px;
+}
+
+#head_div {
+    float: left;
+    background-color: #35424a;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2rem;
+    color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.description{
+    float: left;
+    background-color: #35424a;
+    border-top: 2px solid #e8491d;
+    border-radius: 25px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    line-height: 1.2rem;
+    color: red;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-bottom: 2px solid #e8491d ;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.atention{
+    color: red;
+    font:1.5rem;
+}
+
+.price::before{
+    content: 'Price : ';
+}
+
+.price:nth-child(even)::after{
+    content: '\0024';
+}
+
+.price:nth-child(odd)::after{
+    content: '\20AC';
+}
+
+#telefoane{
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+#smartphones , #tablets , #smart {
+  margin-top:20px;
+}
+
+
+
+/* footer */
+
+footer{
+  padding:1.2rem;
+  margin-top:30%;
+  color:#ffffff;
+  background-color:darkgrey;
+  text-align: center;
+}
+
+footer #firstf{
+    color:dodgerblue;
+    font-size: 1rem;
+}
+
+footer #secondf{
+    color: red;
+    font-size: 1rem;
+}
+
+aside{
+    font-size: 0.8rem;
+    font-style: oblique;
+}
+
+/* table */
+
+.email::before{
+    content: '\2709 :';
+}
+
+.nrtel::before{
+    content: '\2121 : ';
+}
+
+.fax::before{
+    content: '\213B : ';
+}
+
+/* Media querie */
+
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+    .container{  
+        position: fixed;
+        top: 0px;
+        background-color:#35424a;
+        border-bottom:#e8491d 2px solid;
+        width:100%;
+        min-height: 150px;
+        overflow: auto;
+    }
+    header{
+        padding-top:0px;
+        min-height:150px;
+        border-bottom:#e8491d 2px solid;
+    }
+    
+    header #logo{
+        float:right;
+        position: relative;
+        right: 10px;
+        top: 100px;
+    }
+    
+    header #first{
+        font-size: 2rem;
+    }
+    header #second{
+        font-size: 2rem;
+    }
+    header #logo img{
+        width: 2.25rem;
+        height: 2rem;
+    }
+       
+    ul.menu{
+        width: 25%;
+        position:absolute;
+        top: 25%;
+    }       
+    
+    ul.menu>li a{
+        text-align: left;
+        font-size: 1.2rem;
+    }
+    
+    ul.menu>li>submenu{
+        position: relative;
+        top: 0px;
+    }
+    ul.menu>li{
+        margin-top: 10px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    ul.menu>li:hover{
+        overflow: visible;
+    }
+    ul.menu>li a:hover{
+        color: yellow;
+    }
+    
+    /* boxes */
+
+    .containere{
+        border-radius: 35px;
+        grid-template-columns: auto;
+        grid-row-gap: 5px;
+    }
+    
+    .box p{
+        font-size: 2rem;
+    }
+    
+    .box img{
+        border-radius: 0px;
+        width: 25%;
+        height: 150px;
+    }
+
+    #head_div {
+        font-size: 1.5rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .description{
+        font-size: 1.3rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .atention{
+        font:1.2rem;
+    }
+    
+    footer{
+        font-size: 1.5rem;
+        margin-top:5%;
+    }
+
+    footer #firstf{
+        color:dodgerblue;
+        font-size: 2rem;
+    }
+
+    footer #secondf{
+        color: red;
+        font-size: 2rem;
+    }
+
+    aside{
+        font-size: 1.4rem;
+        font-style: oblique;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+
+    .container{  
+        position: fixed;
+        top: 0px;
+        background-color:#35424a;
+        border-bottom:#e8491d 2px solid;
+        width:100%;
+        min-height: 170px;
+        overflow: auto;
+    }
+    header{
+        padding-top:0px;
+        min-height:170px;
+        border-bottom:#e8491d 2px solid;
+    }
+    
+    header #logo{
+        width: auto;
+        float:right;
+        position: relative;
+        right: 5%;
+        top: 100px;
+    }
+    
+    header #first{
+        font-size: 2.5rem;
+    }
+    header #second{
+        font-size: 2.5rem;
+    }
+    header #logo img{
+        width: 5rem;
+        height: 3.5rem;
+    }
+       
+    ul.menu{
+        width: 30%;
+        position:absolute;
+        top: 20px;
+    }       
+    
+    ul.menu>li a{
+        text-align: left;
+        font-size: 1.4rem;
+    }
+    
+    ul.menu>li>submenu{
+        position: relative;
+        top: 0px;
+    }
+    ul.menu>li{
+        margin-top: 10px;
+        width: 100%;
+        padding: 0px;
+    }
+
+    ul.menu>li:hover{
+        overflow: visible;
+    }
+    ul.menu>li a:hover{
+        color: yellow;
+    }
+    
+    /* boxes */
+
+    .containere{
+        border-radius: 25px;
+        grid-template-columns: auto auto;
+        grid-row-gap: 5px;
+    }
+    
+    .box p{
+        font-size: 1.5rem;
+    }
+    
+    .box img{
+        width: 40%;
+        border-radius: 0px;
+        height: 150px;
+    }
+
+    #head_div {
+        font-size: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .description{
+        font-size: 1.5rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .atention{
+        font:1rem;
+    }
+    
+    footer{
+        font-size: 1.5rem;
+        margin-top:5%;
+    }
+
+    footer #firstf{
+        color:dodgerblue;
+        font-size: 2rem;
+    }
+
+    footer #secondf{
+        color: red;
+        font-size: 2rem;
+    }
+
+    aside{
+        font-size: 1.4rem;
+        font-style: oblique;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    html{
+        font-size: 22px;
+    }
+
+    .container{  
+        min-height: 200px;
+    }
+    
+    header{
+        padding-top:30px;
+        min-height:170px;
+    }
+    
+    header nav{
+        width: 100%;
+        float:left;
+        margin-top:0px;
+    }
+    
+    header #logo{
+        width: auto;
+        float:right;
+        position: relative;
+        right: 10px;
+        top: 10px;
+    }
+    
+    header #first{
+        font-size: 4rem;
+    }
+    header #second{
+        font-size: 4rem;
+    }
+    header #logo img{
+        width: 10rem;
+        height: 7rem;
+    }
+       
+    ul.menu{
+        position:fixed;
+        top: 150px;
+    }       
+    
+    ul.menu>li{
+        padding: 0px 5px 0px 5px;
+        display: inline-block;
+    }
+    
+    ul.menu>li a{
+        font-size: 1.5rem;
+    }
+    
+    ul.menu>li>submenu{
+        position: relative;
+        top: 0px;
+    }
+
+    ul.menu>li:hover{
+        overflow: visible;
+    }
+    
+    /* boxes */
+    
+    .box img{
+        border-radius: 0px;
+        width: 30%;
+        height: 150px;
+    }
+
+    #head_div {
+        font-size: 1.5rem;
+    }
+
+    .description{
+        font-size: 1rem;
+    }
+
+    .atention{
+        font:0.8rem;
+    }
+    
+    footer{
+        margin-top:15%;
+    }
+
+    footer #firstf{
+        color:dodgerblue;
+        font-size: 1rem;
+    }
+
+    footer #secondf{
+        color: red;
+        font-size: 1rem;
+    }
+
+    aside{
+        font-size: 0.8rem;
+        font-style: oblique;
+    }
+}

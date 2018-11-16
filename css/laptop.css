@@ -1,0 +1,66 @@
+/* container */
+body{
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    font: 16px;
+}
+
+.containerLaptop{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 40% auto;
+    overflow: hidden;
+    grid-row-gap: 10px;
+}
+
+.containerLaptop h1{
+    font-size: 1.25rem;
+    color: white;
+    background-color: darkred;
+    font-family:monospace;
+    font-style: oblique;
+}
+
+.imagine {
+    padding: 10px;
+    float: right;
+    width: 100%;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.imagine img{
+    width: 50%;
+    height: 200px;
+}
+
+.price s{
+    color:red;
+}
+
+.price sub {
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.price img{
+    width: 50px;
+    height: auto;
+}
+
+.descriere{
+    padding: 10px;
+    overflow: hidden;
+    text-align:center;
+    line-height: 1.2rem;
+    width: 100%;
+    float: left;
+}
+
+.descriere p{
+    font-family: cursive;
+    font-variant-caps : petite-caps;
+    font: 0.8rem;
+}
