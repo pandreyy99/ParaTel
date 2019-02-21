@@ -6,22 +6,40 @@ body{
     font: 16px;
 }
 
-.containerTelefoane{
+#myNavbar>ul.nav .current a{
+  color:#e8491d;
+  font-weight:bold;
+}
+
+#myNavbar>ul.nav .contact a{
+    color:dodgerblue;
+    font-weight: bold;
+}
+
+#containerMare{
     display: grid;
-    margin-top: 10px;
+    margin-top: 20px;
     grid-template-columns: 30% auto;
+}
+
+#containerTelefoane{
+    display: grid;
+    margin-top: 20px;
+    /**grid-template-columns: 30% auto;*/
+    grid-template-columns: 30% 35% 35%; 
     overflow: hidden;
     grid-row-gap: 10px;
 }
 
-.containerTelefoane h1{
+#containerTelefoane h1{
+    margin: auto;
     font-size: 1.25rem;
-    color: gold;
+    color: dodgerblue;
     font-family:monospace;
-    font-style: oblique
+    font-style: oblique;
 }
 
-.imagine {
+.div-imagine {
     padding: 10px;
     float: right;
     width: 100%;
@@ -29,19 +47,9 @@ body{
     line-height: 1.2rem;
 }
 
-.imagine img{
+.div-imagine img{
     max-width: 50%;
     max-height: 150px;
-}
-
-.price s{
-    color:red;
-}
-
-.price sub {
-    color: black;
-    font-weight: bold;
-    font-size: 1.2rem;
 }
 
 .price img{
@@ -49,16 +57,47 @@ body{
     height: auto;
 }
 
-.descriere{
-    overflow: hidden;
+.div-specificatii{
+    padding: 10px;
+    overflow: auto;
     text-align:center;
     line-height: 1.2rem;
     width: 100%;
     float: left;
 }
 
-.descriere p{
-    font-family: cursive;
-    font-variant-caps : petite-caps;
-    font: 0.8rem;
+.specificatii p{
+    color: black;
+    font-weight: normal;
 }
+
+.div-reviews{
+    padding: 10px;
+    overflow: auto;
+    width: 80%;
+}
+
+.div-reviews h1{
+    text-align: center;
+}
+
+ #check{
+     display: grid;
+     grid-template-columns: 100%;
+     color: black;
+     
+}
+
+.filtre h1{
+    padding: 10px;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+
+input[type='radio'], label .radio{   
+    vertical-align: baseline;
+    padding: 10px;
+    margin: 10px;
+ }

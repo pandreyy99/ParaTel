@@ -206,12 +206,8 @@ ul.menu>li .contact{
     content: 'Price : ';
 }
 
-.price:nth-child(even)::after{
+.price::after{
     content: '\0024';
-}
-
-.price:nth-child(odd)::after{
-    content: '\20AC';
 }
 
 #telefoane{
