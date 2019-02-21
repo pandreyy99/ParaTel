@@ -1,0 +1,33 @@
+<culori>
+    <telefon>
+        <nume>Iphone 6</nume>
+        <culoare nume = "white">white</culoare>
+        <culoare nume = "black">black</culoare>
+        </telefon>
+    <telefon>
+        <nume>Samsung A3</nume>
+        <culoare nume = "black">black</culoare>
+        </telefon>
+    <telefon>
+        <nume>HTC One 10</nume>
+        <culoare nume = "black">black</culoare>
+        <culoare nume = "blue">blue</culoare>
+        </telefon>
+    <telefon>
+        <nume>Iphone X</nume>
+        <culoare nume = "white">white</culoare>
+        <culoare nume = "purple">purple</culoare>
+        <culoare nume = "blue">blue</culoare>
+        </telefon>
+    <telefon>
+        <nume>Samsung Note 9</nume>
+        <culoare nume = "white">white</culoare>
+        <culoare nume = "black">black</culoare>
+        </telefon>
+    <telefon>
+        <nume>Samsung S8 plus</nume>
+        <culoare nume = "white">white</culoare>
+        <culoare nume = "purple">purple</culoare>
+        <culoare nume = "blue">blue</culoare>
+        </telefon>
+</culori>
