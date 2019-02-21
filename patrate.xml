@@ -1,0 +1,14 @@
+<patrate>
+<patrat nume="d1">
+<latura>50</latura>
+<culoare>red</culoare>
+</patrat>
+<patrat nume="d2">
+<latura>35</latura>
+<culoare>blue</culoare>
+</patrat>
+<patrat nume="d3">
+<latura>100</latura>
+<culoare>green</culoare>
+</patrat>
+</patrate>
